@@ -39,6 +39,9 @@ const EditColumns = ({ column, id, statuses }) => {
   return (
     <div className={editColumnsDiv}>
       <div className={itemsContainer}>
+        {/* #form-management */}
+        {/* once the max number of enabled columns is reached, you will be told that you have to disable another before you can enable more, it also disables the toggle buttons
+        and grays it out, uses the length of the array containing enabled columns to determin whether or not to disable it*/}
         <Popup
           content="The maximum amount of columns have been displayed. Toggle off another column to toggle this one on."
           trigger={
